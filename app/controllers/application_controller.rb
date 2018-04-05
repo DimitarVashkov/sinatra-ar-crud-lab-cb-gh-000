@@ -28,12 +28,12 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  get '/posts/:id' do
-    erb :show
-  end
-
-  get '/posts/:id/edit' do
-    erb :edit
-  end
+  # get '/posts/:id' do
+  #   erb :show
+  # end
+  # 
+  # get '/posts/:id/edit' do
+  #   erb :edit
+  # end
 
 end
