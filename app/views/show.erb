@@ -2,7 +2,8 @@
 <p><%= @post.content %> </p>
 
 
-<form method="post" action="/models/<%= @model.id %>/delete">
-  <input id="hidden" type="hidden" name="_method" value="DELETE">
+<form method="post" action="/posts/<%=@post.id%>/delete">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+
   <input type="submit" value="delete">
-</form>
+<form>
