@@ -1,5 +1,6 @@
 
 require_relative '../../config/environment'
+require_relative '../models/post'
 
 class ApplicationController < Sinatra::Base
 
@@ -14,6 +15,10 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/new' do
     erb :new
+  end
+
+  post '/posts' do
+    
   end
 
   get '/posts' do
